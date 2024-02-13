@@ -72,7 +72,7 @@ body {
   #navbar #saurav-logo-div {
     position: absolute;
     left: 0;
-    top: 0;
+    top: 10px;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -82,7 +82,7 @@ body {
   #navbar #saurav-logo-div {
     position: absolute;
     left: 0;
-    top: 0;
+    top: 10px;
   }
   #navbar #saurav-logo-div #saurav-logo-img {
     width: 30px;
