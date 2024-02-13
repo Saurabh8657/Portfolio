@@ -40,3 +40,12 @@ let figmaId = setInterval(() => {
 
 
 
+let resumeBtn = document.querySelector(".resume-button") ;
+let downloadIcon = document.createElement("i") ;
+downloadIcon.classList.add("fa-regular", "fa-circle-down") ;
+resumeBtn.addEventListener("mouseenter", ()=>{
+    resumeBtn.append(downloadIcon)
+})
+resumeBtn.addEventListener("mouseleave", ()=>{
+    resumeBtn.removeChild(downloadIcon)
+})

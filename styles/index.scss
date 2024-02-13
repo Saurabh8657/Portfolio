@@ -57,26 +57,99 @@ body{
         color: white;
         background-color: #ff014f ;
         border-radius: 5px;
+        transition: all ease 0.3s;
         &:hover{
-            border-bottom: 3px solid  #bd033b ;
+            transform: scale(1.05);
         }
     }
 }
+///// tablet 
+@media only screen and (max-width: 768px){
+    #navbar{
+        padding: 10px 50px 0 50px;
+        #saurav-logo-div{
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        // .nav-link{
+        //     // margin: auto;
+        //     transition: all ease 0.3s;
+        //     &:after {    
+        //         background: none repeat scroll 0 0 transparent;
+        //         bottom: 0;
+        //         content: "";
+        //         display: block;
+        //         height: 2px;
+        //         left: 50%;
+        //         position: relative;
+        //         background: #ff014f ;
+        //         transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        //         width: 0;
+        //     }
+        //         &:hover:after { 
+        //         width: 100%; 
+        //         left: 0; 
+        //     }
+        //     &:hover{
+        //         color: #ff014f ;
+        //         text-underline-offset: 2px #ff014f; 
+        //     }
+        // }
+    }
+}
+///// mobile
+@media only screen and (max-width: 480px){
+    #navbar{
+        padding: 10px 10px 0 10px;
+        #saurav-logo-div{
+            position: absolute;
+            left: 0;
+            top: 0;
+            #saurav-logo-img{
+                width: 30px;
+                height: 30px;
+            }
+            #saurav-logo{
+                font-size: 18px;
+            }
+        }
+        // .nav-link{
+        //     transition: all ease 0.3s;
+        //     &:after {    
+        //         background: none repeat scroll 0 0 transparent;
+        //         bottom: 0;
+        //         content: "";
+        //         display: block;
+        //         height: 2px;
+        //         left: 50%;
+        //         position: relative;
+        //         background: #ff014f ;
+        //         transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        //         width: 0;
+        //     }
+        //         &:hover:after { 
+        //         width: 100%; 
+        //         left: 0; 
+        //     }
+        //     &:hover{
+        //         color: #ff014f ;
+        //         text-underline-offset: 2px #ff014f; 
+        //     }
+        // }
+    }
+}
+
+
 
 .hero-banner{
     padding: 80px 100px;
     height: auto;
-    @media only screen and (max-width: 480px){
-        padding: 30px 30px;
-    }
     .content{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
-        @media only screen and (max-width: 480px){
-            flex-direction: column;
-        }
         .banner-img{
             position: relative;
             left: -50px;
@@ -84,12 +157,14 @@ body{
             height: 450px;
             margin-top: 50px;
             border-radius: 20px;
+            animation: fromRight 1.5s ease-out 0.2s forwards;
         }
         .text-content{
             color: #4a0651;
             display: flex;
             flex-direction: column;
             z-index: 2;
+            animation: fromLeft 0.8s ease-out forwards;
             .welcome-text{
                 font-size: 16px;
                 font-weight: 500;
@@ -145,6 +220,26 @@ body{
                 
             }
         }
+    }
+}
+@keyframes fromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0; /* Fade in effect */
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes fromRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0; /* Fade in effect */
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
     }
 }
 ///// tablet 
@@ -421,11 +516,18 @@ body{
         font-weight: 700;
         color: #4a0651;
     }
+    >div:nth-child(2){
+        animation-delay:.12s;
+    }
+    >div:nth-child(3){
+        animation-delay:.20s;
+    }
     .project-card{
         display: flex;
         flex-direction: row;
         background-color: rgb(0, 0, 0,0.08);
         border-radius: 10px;
+        animation: fromBottom 1s ease-out forwards;
         .card-img{
             padding: 20px;
             width: 50%;
@@ -522,6 +624,16 @@ body{
                 }
             }
         }
+    }
+}
+@keyframes fromBottom {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
     }
 }
 ///// tablet 
@@ -736,13 +848,13 @@ body{
       }
       
       .submit-btn {
-        background-color: #fd917e;
+        background-color: #ff014f;
         filter: drop-shadow(2px 2px 3px #0003);
         color: #fff;
         font-family: "Poppins",sans-serif;
         font-size: clamp(16px, 1.6vw, 18px);
         display: block;
-        padding: 12px 20px;
+        padding: 8px 30px;
         margin: 2px auto;
         border: none;
         border-radius: 4px;
