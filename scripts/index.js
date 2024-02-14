@@ -51,24 +51,24 @@ resumeBtn.addEventListener("mouseleave", ()=>{
 })
 
 
-// Get reference to the scroll-to-top button
-const scrollToTopBtn = document.querySelector("#scroll-to-top-btn");
+// // Get reference to the scroll-to-top button
+// const scrollToTopBtn = document.querySelector("#scroll-to-top-btn");
 
-// Function to scroll to the top when button is clicked
-scrollToTopBtn.addEventListener("click", () => {
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth" // Smooth scrolling animation
-    });
-});
+// // Function to scroll to the top when button is clicked
+// scrollToTopBtn.addEventListener("click", () => {
+//     window.scrollTo({
+//         top: 0,
+//         behavior: "smooth" // Smooth scrolling animation
+//     });
+// });
 
-// Function to toggle display of scroll-to-top button based on scroll position
-window.addEventListener("scroll", scrollFunction);
+// // Function to toggle display of scroll-to-top button based on scroll position
+// window.addEventListener("scroll", scrollFunction);
 
-function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        scrollToTopBtn.style.display = "block";
-    } else {
-        scrollToTopBtn.style.display = "none";
-    }
-}
+// function scrollFunction() {
+//     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+//         scrollToTopBtn.style.display = "block";
+//     } else {
+//         scrollToTopBtn.style.display = "none";
+//     }
+// }

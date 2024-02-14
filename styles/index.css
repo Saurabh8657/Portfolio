@@ -911,7 +911,7 @@ body {
     transform: translateX(0%);
   }
 }
-#scroll-to-top-btn {
+#myBtn {
   display: none;
   position: fixed;
   bottom: 20px;
@@ -930,7 +930,7 @@ body {
   z-index: 10;
   transition: all ease 0.3s;
 }
-#scroll-to-top-btn:hover {
+#myBtn:hover {
   transform: scale(1.1);
 }
 
