@@ -4,6 +4,7 @@ body{
     overflow-x: hidden;
     box-sizing: border-box;
     background-color: #ecf0f3;
+    font-family: "Rubik","monospac";
 }
 #navbar{
     padding: 10px 50px 0 50px;
@@ -26,6 +27,8 @@ body{
     }
     .nav-link{
         transition: all ease 0.3s;
+        color: #4a0651d4;
+        font-family: "Rubik","monospac";
         &:after {    
             background: none repeat scroll 0 0 transparent;
             bottom: 0;
@@ -679,6 +682,7 @@ body{
             flex-direction: column;
             .card-img{
                 width: 100% ;
+                height: 250px;
                 img{
                     border-radius: 10px 10px 0 0;
                 }
