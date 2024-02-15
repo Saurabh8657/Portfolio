@@ -297,6 +297,72 @@ body{
     }
 }
 
+
+// -------  about --------
+.about-div{
+    padding: 0px 50px 80px 50px;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .image-div{
+            flex-basis: 33%;
+            img{
+                width: 100%;
+                border-radius: 15px;
+            }
+        }
+        .details-div{
+            flex-basis: 60%;
+            .sec-heading{
+
+            }
+            .desc{
+
+            }
+            .tab-titles{
+                display: flex;
+                flex-direction: row;
+                margin: 20px 0 40px;
+                .tab-links{
+                    margin-right: 50px;
+                    font-size: 18px;
+                    font-weight: 500;
+                    cursor: pointer;
+                    position: relative;
+                    &:after{
+                        content: '';
+                        width: 0;
+                        height: 3px;
+                        background-color: #ff014f;  
+                        position: absolute;
+                        left: 0;
+                        bottom: -8px;
+                        transition: all ease 0.3s;
+                    }
+                }
+                .active-link::after{
+                    width: 100%;
+                }
+            }
+            .tab-contents{
+                display: none;
+                ul{
+                    li{
+                        list-style: circle;
+                    }
+                    span{
+                        color: #ff014f;
+                    }
+                }
+            }
+            .active-tab{
+                display: block;
+            }
+        }
+    }
+}
+
 ///////////// skills   ////////////
 .technical-skills-div{
     padding: 50px 0 0 0  ;

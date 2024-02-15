@@ -238,6 +238,62 @@ body {
     gap: 20px;
   }
 }
+.about-div {
+  padding: 0px 50px 80px 50px;
+}
+.about-div .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.about-div .container .image-div {
+  flex-basis: 33%;
+}
+.about-div .container .image-div img {
+  width: 100%;
+  border-radius: 15px;
+}
+.about-div .container .details-div {
+  flex-basis: 60%;
+}
+.about-div .container .details-div .tab-titles {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0 40px;
+}
+.about-div .container .details-div .tab-titles .tab-links {
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+.about-div .container .details-div .tab-titles .tab-links:after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background-color: #ff014f;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: all ease 0.3s;
+}
+.about-div .container .details-div .tab-titles .active-link::after {
+  width: 100%;
+}
+.about-div .container .details-div .tab-contents {
+  display: none;
+}
+.about-div .container .details-div .tab-contents ul li {
+  list-style: circle;
+}
+.about-div .container .details-div .tab-contents ul span {
+  color: #ff014f;
+}
+.about-div .container .details-div .active-tab {
+  display: block;
+}
+
 .technical-skills-div {
   padding: 50px 0 0 0;
   display: flex;

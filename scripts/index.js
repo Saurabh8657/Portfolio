@@ -50,3 +50,15 @@ resumeBtn.addEventListener("mouseleave", ()=>{
     resumeBtn.removeChild(downloadIcon)
 })
 
+let tabLinks = document.querySelectorAll(".tab-links") ;
+let tabContents = document.querySelectorAll(".tab-contents") ;
+
+function toggleTab(tabname){
+    for(tabLink of tabLinks){
+        tabLink.classList.remove("active-link") ;
+    }
+    for(tabContent of tabContents){
+        tabContent.classList.remove("active-tab") ;
+    }
+}
+
