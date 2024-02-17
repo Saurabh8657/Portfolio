@@ -1,28 +1,28 @@
 <a href="https://vinodjangid07.github.io/" target="_blank"> 🚀 Saurav Ganguly Portfolio 🚀 </a>
 
 <img src="/img/page-look.png"  alt="screenshot">
- 🚀 Table of Contents  🚀 
+ 🚀 Table of Contents  🚀  =>
 About Me
 Technical Skills
 Projects
 Contact Me
 About Me
 
- 🚀 Technical Skills 🚀 
+ 🚀 Technical Skills 🚀  
 
-Frontend Development
+Frontend Development =>
 HTML || CSS || Bootstrap || Tailwind || React || Redux || Express || Chakra UI
 
-Languages 
+Languages =>
 Java || JavaScript || TypeScript
 
-Databases
+Databases =>
 MongoDB || MySQL
 
-Tools & Software
+Tools & Software =>
 Git Bash || GitHub || VS Code || Vercel 
 
- 🚀 Projects 🚀 
+ 🚀 Projects 🚀  =>
 Globe Gliders || TIME || FIGMA: A Pixel Perfection Journey
 
 Email: saurabhganguly38@gmail.com
