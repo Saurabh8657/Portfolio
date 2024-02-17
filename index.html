@@ -35,18 +35,18 @@
               <a class="nav-link fw-bold mx-3 " aria-current="page" href="#">HOME</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link fw-bold about-tag" aria-disabled="true" href="#about">ABOUT</a>
+              <a class="nav-link fw-bold about-tag" aria-disabled="true" href="#about-section" id="about">ABOUT</a>
           </li>
 
           <li class="nav-item">
-              <a class="nav-link fw-bold mx-3 skills-tag "  href="#technical-skills-div" >SKILLS</a>
+              <a class="nav-link fw-bold mx-3 skills-tag "  href="#technical-skills-div" id="skills" >SKILLS</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link fw-bold mx-3 projects-tag" href="#projects-list">PROJECTS</a>
+              <a class="nav-link fw-bold mx-3 projects-tag" href="#projects-list" id="projects">PROJECTS</a>
           </li>
 
           <li class="nav-item">
-              <a class="nav-link fw-bold contact-tag" aria-disabled="true" href="#contact">CONTACT</a>
+              <a class="nav-link fw-bold contact-tag" aria-disabled="true" href="#contact-section" id="contact" >CONTACT</a>
           </li>
       </ul>
       <a href="/Resume/SAURABH_GANGULY_CV .pdf" download ><button class="resume-button">Resume </button></a>
@@ -89,7 +89,7 @@
       </div>
   </div>
 
-  <div class="about-div" id="about">
+  <div class="about-div" id="about-section">
     <div class="container">
       <div class="image-div">
         <img src="/img/Saurabh-Ganguly-Photoroom.webp" alt="saurav">
@@ -160,22 +160,22 @@
   <div class="technical-skills-div" id="technical-skills-div">
       <h2 class="sec-heading"> <pre><span style="color: #4a0651;  text-decoration: line-through;">     </span> TECHNICAL SKILLS <span style="color: #4a0651; text-decoration: line-through;">     </span></pre></h2>
       <div class="technical-skills-list">
-          <div class="icon-card" title="React"> <img src="/img/React.svg" alt="react"> </div>
-          <div class="icon-card" title="Redux"> <img src="/img/Redux.svg" alt="redux"> </div>
-          <div class="icon-card" title="TypeScript"> <img src="/img/TypeScript.svg" alt="TypeScript"> </div>
-          <div class="icon-card" title="Express"> <img src="/img/Express.svg" alt="express"> </div>
-          <div class="icon-card" title="JavaScript" ><img src="/img/JavaScript.svg" alt="js-icon"> </div>
-          <div class="icon-card" title="HTML"> <img src="/img/HTML5.svg" alt="html"> </div>
-          <div class="icon-card" title="Bootstrap"> <img src="/img/Bootstrap.svg" alt="bootstrap"> </div>
-          <div class="icon-card" title="Sass"> <img src="/img/Sass.svg" alt="sass"> </div>
-          <div class="icon-card" title="CSS"> <img src="/img/CSS3.svg" alt="css"> </div>
-          <div class="icon-card" title="Tailwind"> <img src="/img/Tailwind CSS.svg" alt="tailwind"> </div>
-          <div class="icon-card" title="Figma"> <img src="/img/Figma.svg" alt="figma"> </div>
-          <div class="icon-card" title="GitHub"> <img src="/img/GitHub.svg" alt="github"> </div>
-          <div class="icon-card" title="MongoDB"> <img src="/img/MongoDB.svg" alt="mongo"> </div>
-          <div class="icon-card"  title="Node"> <img src="/img/Node.js.svg" alt="node"> </div>
-          <div class="icon-card" title="Vercel"> <img src="/img/Vercel.svg" alt="vercel"> </div>
-          <div class="icon-card" title="VS Code"> <img src="/img/Visual Studio Code (VS Code).svg" alt="vscode"> </div>
+          <div class="icon-card" title="React" name="React"> <img src="/img/React.svg" alt="react"> </div>
+          <div class="icon-card" title="Redux" name="Redux"> <img src="/img/Redux.svg" alt="redux"> </div>
+          <div class="icon-card" title="TypeScript" name="TypeScript"> <img src="/img/TypeScript.svg" alt="TypeScript"> </div>
+          <div class="icon-card" title="Express" name="Express"> <img src="/img/Express.svg" alt="express"> </div>
+          <div class="icon-card" title="JavaScript" name="JavaScript" ><img src="/img/JavaScript.svg" alt="js-icon"> </div>
+          <div class="icon-card" title="HTML" name="HTML" > <img src="/img/HTML5.svg" alt="html"> </div>
+          <div class="icon-card" title="Bootstrap" name="Bootstrap" > <img src="/img/Bootstrap.svg" alt="bootstrap"> </div>
+          <div class="icon-card" title="Sass" name="Sass" > <img src="/img/Sass.svg" alt="sass"> </div>
+          <div class="icon-card" title="CSS" name="CSS" > <img src="/img/CSS3.svg" alt="css"> </div>
+          <div class="icon-card" title="Tailwind" name="Tailwind" > <img src="/img/Tailwind CSS.svg" alt="tailwind"> </div>
+          <div class="icon-card" title="Figma" name="Figma" > <img src="/img/Figma.svg" alt="figma"> </div>
+          <div class="icon-card" title="GitHub" name="GitHub" > <img src="/img/GitHub.svg" alt="github"> </div>
+          <div class="icon-card" title="MongoDB" name="MongoDB" > <img src="/img/MongoDB.svg" alt="mongo"> </div>
+          <div class="icon-card"  title="Node" name="Node" > <img src="/img/Node.js.svg" alt="node"> </div>
+          <div class="icon-card" title="Vercel" name="Vercel" > <img src="/img/Vercel.svg" alt="vercel"> </div>
+          <div class="icon-card" title="VS Code" name="VS Code" > <img src="/img/Visual Studio Code (VS Code).svg" alt="vscode"> </div>
       </div>
   </div>
 
@@ -391,6 +391,76 @@
               </div>
           </div>
       </div>
+
+      <!-- Portfolio -->
+      <div class="project-card">
+        <div id="carouselExampleIndicators" class="carousel slide card-img" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="1000">
+                <img src="./img/Portfolio/1.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="500">
+                <img src="./img/Portfolio/2.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="500">
+                <img src="./img/Portfolio/3.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item " data-bs-interval="500">
+                <img src="./img/Portfolio/4.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="500">
+                <img src="./img/Portfolio/5.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="500">
+                <img src="./img/Portfolio/6.png" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        <!-- <div class="card-img  figma-project-img"></div> -->
+
+        <div class="card-details">
+            <h2 class="title" >Portfolio</h2>
+            <p class="desc">Experience the fusion of creativity and precision in my portfolio projects, where I demonstrate mastery of HTML, CSS, SCSS, and intricate transition and animation effects. Crafted with meticulous attention to detail, these projects exemplify pixel-perfect design. Join me on my journey through Figma, where innovation thrives, and unparalleled user experiences come to life.</p>
+            <div class="card-sub-details">
+                <div class="role">
+                    <p>Role</p>
+                    <h3>Solo Project</h3>
+                </div>
+                <div class="durantion">
+                    <p>Duration</p>
+                    <h3>2 days</h3>
+                </div>
+                <div class="tech-stack">
+                    <p>Tech Stack</p>
+                    <div class="icons">
+                        <img src="/img/HTML5.svg" alt="">
+                        <img src="/img/CSS3.svg" alt="">
+                        <img src="/img/Sass.svg" alt="">
+                        <img src="/img/JavaScript.svg" alt="">
+                        <img src="/img/Bootstrap.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="link-buttons">
+                <a href="https://saurabh8657.github.io/" target="_blank"><button class="view-project-btn">View Project</button></a>
+                <a href="https://github.com/Saurabh8657/Saurabh8657.github.io" target="_blank"><button class="gitHub-btn"><i class="fa-brands fa-github fa-lg" ></i>  GitHub</button></a>
+            </div>
+        </div>
+    </div>
+
   </div>
 
   <section class="github-div">
@@ -423,22 +493,26 @@
   </section>
   
 
-  <section id="contact" >
+  <section id="contact-section" >
       <div class="contact-box">
         <div class="contact-links">
           <h2>CONTACT</h2>
           <div class="links">
             <div class="link">
               <a href="https://www.linkedin.com/in/saurabh-ganguly/" target="_blank"><img src="https://i.postimg.cc/m2mg2Hjm/linkedin.png" alt="linkedin"></a>
+              <a href="https://www.linkedin.com/in/saurabh-ganguly/" target="_blank">Linkedin</a>
             </div>
             <div class="link">
               <a href="https://github.com/Saurabh8657" target="_blank"><img src="https://i.postimg.cc/YCV2QBJg/github.png" alt="github"></a>
+              <a href="https://github.com/Saurabh8657" target="_blank">Github</a>
             </div>
-            <div class="link">
-              <a href=""  target="_blank"><img src="https://i.postimg.cc/W4Znvrry/codepen.png" alt="codepen"></a>
+            <div class="link phone-div">
+              <div id="phone-icon"><a href="tel:+918657042744" target="_blank" ><i class="fa-solid fa-phone fa-lg"></i></a></div>
+              <a href="tel:+918657042744" target="_blank" id="phone-no">+91 8657 0427 44</a>
             </div>
             <div class="link">
               <a href="mailto:saurabhganguly38@gmail.com" target="_blank"><img src="https://i.postimg.cc/NjLfyjPB/email.png" alt="email"></a>
+              <a href="mailto:saurabhganguly38@gmail.com" target="_blank">saurabhganguly38@gmail</a>
             </div>
           </div>
         </div>
@@ -468,10 +542,10 @@
     <h4> 🚀 Learning and leveling UP 🚀 </h4>
     <ul class="menu">
       <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
-      <li class="menu__item"><a class="menu__link" href="#about">About</a></li>
-      <li class="menu__item"><a class="menu__link" href="#skills">Skills</a></li>
+      <li class="menu__item"><a class="menu__link" href="#about-section">About</a></li>
+      <li class="menu__item"><a class="menu__link" href="#technical-skills-div">Skills</a></li>
       <li class="menu__item"><a class="menu__link" href="#projects-list">Projects</a></li>
-      <li class="menu__item"><a class="menu__link" href="#contact">Contact</a></li>
+      <li class="menu__item"><a class="menu__link" href="#contact-section">Contact</a></li>
     </ul>
     <div class="right">
       <p> made with <i class="fa-solid fa-heart" style="color: #ff014f;"></i> Saurav_Ganguly </p>

@@ -1,6 +1,6 @@
 <a href="https://saurav-ganguly-portfolio.vercel.app/" target="_blank"> 🚀 Saurav Ganguly Portfolio 🚀 </a>
 
-<img src="/img/page-look.png"  alt="screenshot">
+<img src="/img/Portfolio/1.png"  alt="screenshot">
  🚀 Table of Contents  🚀  =>
 About Me
 Technical Skills

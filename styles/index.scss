@@ -81,8 +81,6 @@ body{
     }
 }
 
-
-
 .hero-banner{
     padding: 80px 100px;
     height: auto;
@@ -909,27 +907,27 @@ body{
         
         
     .contact-links {
-    background-color: #1f2e43;
-    background:
-        radial-gradient(
-        circle at 55% 92%, #426691 0 12%, transparent 12.2%
-        ), 
-        radial-gradient(
-        circle at 94% 72%, #426691 0 10%, transparent 10.2%
-        ), 
-        radial-gradient(
-        circle at 20% max(78%, 350px), #263a53 0 7%, transparent 7.2%
-        ), 
-        radial-gradient(
-        circle at 0% 0%, #263a53 0 40%, transparent 40.2%
-        ), 
-        #1f2e43;
-    border-radius: 10px 0 0 10px;
+        background-color: #1f2e43;
+        background:
+            radial-gradient(
+            circle at 55% 92%, #426691 0 12%, transparent 12.2%
+            ), 
+            radial-gradient(
+            circle at 94% 72%, #426691 0 10%, transparent 10.2%
+            ), 
+            radial-gradient(
+            circle at 20% max(78%, 350px), #263a53 0 7%, transparent 7.2%
+            ), 
+            radial-gradient(
+            circle at 0% 0%, #263a53 0 40%, transparent 40.2%
+            ), 
+            #1f2e43;
+        border-radius: 10px 0 0 10px;
     }
     
     .contact-form-wrapper {
-    background-color: #ffffff8f;
-    border-radius: 0 10px 10px 0;
+        background-color: #ffffff8f;
+        border-radius: 0 10px 10px 0;
     }
     
     @media only screen and (max-width: 800px) {
@@ -954,38 +952,70 @@ body{
     }
     
     h2 {
-    font-family: 'Arimo', sans-serif;
-    color: #fff;
-    font-size: clamp(30px, 6vw, 60px);
-    letter-spacing: 2px;
-    text-align: center;
-    transform: scale(.95, 1);
+        font-family: 'Arimo', sans-serif;
+        color: #fff;
+        font-size: clamp(30px, 6vw, 60px);
+        letter-spacing: 2px;
+        text-align: center;
+        transform: scale(.95, 1);
     }
     
     .links {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-top: 50px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        padding-top: 20px;
     }
     
     .link {
-    margin: 10px;
-    cursor: pointer;
+        margin: 10px;
+        cursor: pointer;
+        a {
+            color: white;
+            text-decoration: none;
+            margin-left: 15px;
+            font-size: 18px;
+        }   
+    }
+    .phone-div{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        margin-left: 25px;
+        
+        #phone-icon{
+            width: 45px;
+            height: 45px;
+            border-radius: 8px;
+            background-color: #e1ecff ;
+            display: inline-block;
+            >a{
+                color: #7faafd;
+                margin-left: 0;
+                i{
+                    font-size: 22px;
+                    position: relative;
+                    left: 50%;
+                    top: 30%;
+                    transform: translate(-50%);
+                }
+            }
+        } 
     }
     
     img {
-    width: 45px;
-    height: 45px;
-    filter: 
-        hue-rotate(220deg)
-        drop-shadow(2px 4px 4px #0006);
-    transition: 0.2s;
-    user-select: none;
+        width: 45px;
+        height: 45px;
+        filter: 
+            hue-rotate(220deg)
+            drop-shadow(2px 4px 4px #0006);
+        transition: 0.2s;
+        user-select: none;
     }
         
     img:hover {
-    transform: scale(1.1, 1.1);
+        transform: scale(1.1, 1.1);
     }
     
     img:active {
@@ -1060,24 +1090,31 @@ body{
     }
     
     @media only screen and (max-width: 800px) {
-    h2 {
-        font-size: clamp(40px, 10vw, 60px);
-    }
+        h2 {
+            font-size: clamp(40px, 10vw, 60px);
+        }
+
+        .link>a:nth-child(2){
+            font-size: 16px;
+        }
     }
     
     @media only screen and (max-width: 400px) {
-    h2 {
-        font-size: clamp(30px, 12vw, 60px);
-    }
-    
-    .links {
-        padding-top: 30px;
-    }
-    
-    img {
-        width: 38px;
-        height: 38px;
-    }
+        h2 {
+            font-size: clamp(30px, 12vw, 60px);
+        }
+        
+        .links {
+            padding-top: 30px;
+        }
+        
+        img {
+            width: 38px;
+            height: 38px;
+        }
+        .link>a:nth-child(2){
+            font-size: 16px;
+        }
     }
 }
 
