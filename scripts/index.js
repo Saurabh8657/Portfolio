@@ -1,45 +1,3 @@
-// /////////for projects-screenshot crausal
-// const globeProjectImgArray =["", "","","","","","","","",""] ;
-// let globeProjectImgDiv = document.querySelector(".globe-project-img") ;
-// let globeProjectImg = document.createElement("img") ;
-// globeProjectImgDiv.append(globeProjectImg) ;
-// let globeCrausalIndex = -1;
-// let globeId = setInterval(() => {
-//     globeCrausalIndex++
-//     if(globeCrausalIndex >= globeProjectImgArray.length){
-//         globeCrausalIndex = 0 ;
-//     }
-//     globeProjectImg.src = globeProjectImgArray[globeCrausalIndex] ;
-// }, 1500);
-
-// const timeProjectImgArray =["/img/time/1.png", "/img/time/2.png","/img/time/3.png","/img/time/4.png","/img/time/5.png","/img/time/6.png","/img/time/7.png","/img/time/8.png"] ;
-// let timeProjectImgDiv = document.querySelector(".time-project-img") ;
-// let timeProjectImg = document.createElement("img") ;
-// timeProjectImgDiv.append(timeProjectImg) ;
-// let timeCrausalIndex = -1;
-// let timeId = setInterval(() => {
-//     timeCrausalIndex++
-//     if(timeCrausalIndex >= timeProjectImgArray.length){
-//         timeCrausalIndex = 0 ;
-//     }
-//     timeProjectImg.src = timeProjectImgArray[timeCrausalIndex] ;
-// }, 1500);
-
-// const figmaProjectImgArray =["/img/figma/1.png", "/img/figma/2.png","/img/figma/3.png","/img/figma/4.png","/img/figma/5.png","/img/figma/6.png","/img/figma/7.png","/img/figma/8.png","/img/figma/9.png"] ;
-// let figmaProjectImgDiv = document.querySelector(".figma-project-img") ;
-// let figmaProjectImg = document.createElement("img") ;
-// figmaProjectImgDiv.append(figmaProjectImg) ;
-// let figmaCrausalIndex = -1;
-// let figmaId = setInterval(() => {
-//     figmaCrausalIndex++
-//     if(figmaCrausalIndex >= figmaProjectImgArray.length){
-//         figmaCrausalIndex = 0 ;
-//     }
-//     figmaProjectImg.src = figmaProjectImgArray[figmaCrausalIndex] ;
-// }, 1800);
-
-
-
 let resumeBtn = document.querySelector(".resume-button") ;
 let downloadIcon = document.createElement("i") ;
 downloadIcon.classList.add("fa-regular", "fa-circle-down") ;
@@ -60,5 +18,29 @@ function toggleTab(tabname){
     for(tabContent of tabContents){
         tabContent.classList.remove("active-tab") ;
     }
+    event.currentTarget.classList.add("active-link") ;
+    document.getElementById(tabname).classList.add("active-tab")
 }
 
+  // Get the button
+  let mybutton = document.getElementById("myBtn");
+  
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+      bigWindow.classList.add("navbar-toggle-class");
+
+    } else {
+      mybutton.style.display = "none";
+      bigWindow.classList.remove("navbar-toggle-class");
+    }
+  }
+  
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
