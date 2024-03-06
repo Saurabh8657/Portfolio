@@ -697,6 +697,12 @@ body {
     opacity: 1;
   }
 }
+@media only screen and (max-width: 1024px) {
+  .project-card {
+    display: flex;
+    flex-direction: column;
+  }
+}
 @media only screen and (max-width: 768px) {
   .projects-list {
     padding: 20px 20px;
@@ -996,10 +1002,6 @@ body {
   .contact-box h2 {
     font-size: clamp(40px, 10vw, 60px);
   }
-  .contact-box #phone-icon {
-    width: 60px;
-    height: 60px;
-  }
   .contact-box .link > a:nth-child(2) {
     font-size: 16px;
   }
@@ -1017,10 +1019,6 @@ body {
   }
   .contact-box .link > a:nth-child(2) {
     font-size: 16px;
-  }
-  .contact-box #phone-icon {
-    width: 10px;
-    height: 10px;
   }
 }
 
