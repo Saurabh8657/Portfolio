@@ -418,6 +418,18 @@ body {
 .technical-skills-div .technical-skills-list div:nth-child(16) {
   animation-delay: 0.1s;
 }
+.technical-skills-div .technical-skills-list div:nth-child(17) {
+  animation-delay: 0.2s;
+}
+.technical-skills-div .technical-skills-list div:nth-child(18) {
+  animation-delay: 0.3s;
+}
+.technical-skills-div .technical-skills-list div:nth-child(19) {
+  animation-delay: 0.4s;
+}
+.technical-skills-div .technical-skills-list div:nth-child(20) {
+  animation-delay: 0.5s;
+}
 .technical-skills-div .technical-skills-list img {
   width: 100%;
   height: 100%;
@@ -496,6 +508,18 @@ body {
   }
   .technical-skills-div .technical-skills-list div:nth-child(16) {
     animation-delay: 0.1s;
+  }
+  .technical-skills-div .technical-skills-list div:nth-child(17) {
+    animation-delay: 0.2s;
+  }
+  .technical-skills-div .technical-skills-list div:nth-child(18) {
+    animation-delay: 0.3s;
+  }
+  .technical-skills-div .technical-skills-list div:nth-child(19) {
+    animation-delay: 0.1s;
+  }
+  .technical-skills-div .technical-skills-list div:nth-child(20) {
+    animation-delay: 0.2s;
   }
 }
 @media only screen and (max-width: 480px) {
